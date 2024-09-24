@@ -1,0 +1,23 @@
+.texto1,
+.texto2,
+.texto3 {
+  text-align: justify;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 700px;
+  background-color: aqua;
+}
+.texto1 {
+  box-sizing: content-box;
+  border: 40px solid blue;
+}
+
+.texto2 {
+  box-sizing: border-box;
+  border: 40px solid yellow;
+}
+.texto3 {
+  /* sempre prevalece o mais esspecifico */
+  background-color: green;
+  height: 30px;
+}
