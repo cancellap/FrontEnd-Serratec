@@ -1,0 +1,16 @@
+.conteudo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.conteudo div {
+  color: rgb(104, 103, 103);
+  border-bottom: 2px solid;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+}
+/*https://www.w3schools.com/cssref/sel_nth-child.php */
+.conteudo div:nth-child(2n + 3) {
+  background-color: rgb(205, 205, 205);
+}
