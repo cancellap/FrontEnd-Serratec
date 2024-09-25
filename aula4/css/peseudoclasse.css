@@ -1,0 +1,27 @@
+.meuLink {
+  color: green;
+}
+.meuLink:visited {
+  color: purple;
+}
+.meuLink:hover {
+  color: rgb(128, 255, 128);
+}
+.disciplinas {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.disciplinas li {
+  color: rgb(247, 75, 44);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+.disciplinas li:first-child {
+  color: blue;
+}
+.disciplinas li:last-child {
+  color: rgb(255, 147, 147);
+  border-bottom: none;
+}

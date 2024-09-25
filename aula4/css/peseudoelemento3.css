@@ -1,0 +1,7 @@
+h1::first-letter {
+  font-size: 30px;
+  color: rgb(236, 0, 0);
+}
+h2::after {
+  content: " 2024 ";
+}

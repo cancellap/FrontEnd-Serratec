@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="texto">Texto para ser mudado</p>
+    <div id="caixa"></div>
+    <script>
+      document.getElementById("texto").style.color = "black";
+      document.getElementById("texto").style.fontSize = "#30px";
+      let caixa = document.getElementById("caixa");
+      caixa.style.border = "1px solid blue";
+      caixa.style.backgroundColor = "gray";
+      caixa.style.width = "200px";
+      caixa.style.height = "200px";
+
+      let texo = (document.getElementById("texto").innerHTML = "novo texto");
+    </script>
+  </body>
+</html>
