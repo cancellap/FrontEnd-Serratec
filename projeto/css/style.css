@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   box-sizing: border-box;
 }
@@ -19,16 +19,6 @@ header {
 article {
   padding: 10px;
   border: 1px solid #b5b5b5;
-}
-
-@media (min-width: 800px) {
-  article {
-    float: left;
-    padding: 10px;
-    border: 1px solid #b5b5b5;
-    width: 30%;
-    margin-right: 5%;
-  }
 }
 
 article > h2 {
@@ -76,4 +66,4 @@ article > footer {
 }
 .botao:focus {
   background-color: rgb(124, 253, 124);
-}
+} */
