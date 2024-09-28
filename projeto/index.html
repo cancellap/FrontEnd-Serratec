@@ -1,62 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vendas de Plano de internet</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendas de Plano de internet</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+</head>
+
+<body>
+  <header class="layout-cabecalho layout-cabecalho--position">
+    <div class="container">
+      <nav class="navegacao">
         <img src="img/cabecalho.png" alt="" height="79px" width="79px" />
-      </div>
-    </header>
-    <div id="planos">
-      <div class="container">
-        <article>
-          <h2>Básico</h2>
-          <div>R$89,90</div>
-          <ul>
-            <li>Até <strong>10</strong> usuarios</li>
-            <li><strong>10GB</strong> de acesso</li>
-            <li>Instalação grátis</li>
-            <li>Fibra Ótica</li>
-            <li>Sem fideldade</li>
+        <div class="name">FibraOdio</div>
+
+        <div class="navegacao__menu">
+          <button class="botao--chaveador"></button>
+          <ul class="menu">
+            <li class="menu__item"><a href="#">Como funciona</a></li>
+            <li class="menu__item"><a href="#">Planos e preços</a></li>
+            <li class="menu__item"><a href="#">Contato</a></li>
+            <li class="menu__item"><a href="#" class="botao botao--login">Login</a></li>
           </ul>
-          <footer>
-            <a class="botao" href="assine.html">Assine aqui</a>
-          </footer>
-        </article>
-        <article>
-          <h2>Intermediario</h2>
-          <div>R$190,90</div>
-          <ul>
-            <li>Até <strong>20</strong> usuarios</li>
-            <li><strong>30GB</strong> de acesso</li>
-            <li>Instalação grátis</li>
-            <li>Fibra Ótica</li>
-            <li>Sem fideldade</li>
-          </ul>
-          <footer>
-            <a class="botao" href="assine.html">Assine aqui</a>
-          </footer>
-        </article>
-        <article style="margin-right: 0">
-          <h2>Premium</h2>
-          <div>R$199,90</div>
-          <ul>
-            <li>Até <strong>50GB</strong> usuarios</li>
-            <li><strong>10GB</strong> de acesso</li>
-            <li>Instalação grátis</li>
-            <li>Fibra Ótica</li>
-            <li>Sem fideldade</li>
-          </ul>
-          <footer>
-            <a class="botao" href="assine.html">Assine aqui</a>
-          </footer>
-        </article>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="layout-principal">
+    <div class="container">
+      <div class="principal">
+        <h1 class="principal__titulo">
+          A pior fibra ótica do estado do Rio de Janeiro
+        </h1>
+        <p class="pricipal__subtitulo">
+          Os pacotes são caro demais até se for de graça
+        </p>
+        <div class="principal__acao">
+          <a href="#planos" class="botao botao--principal">Vejam os nossos planos</a>
+        </div>
       </div>
     </div>
-  </body>
+  </section>
+
+  <section class="layout-depoimento">
+    <div class="container">
+      <div class="depoimento">
+        <div class="depoimento__autor">
+          <img src="/img/gandalf.jpeg" alt="usuario" width="70px" height="70px" />
+          <p>Gandalf O Cinzento</p>
+          <blockquote>Cumpriu o que prometeu...NADA!</blockquote>
+        </div>
+      </div>
+  </section>
+
+  <div id="planos" class="layout-planos">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <article class="plano">
+            <h2 class="plano__cabecalho">Básico</h2>
+            <div class="plano__preco">R$89,90</div>
+            <ul class="plano__caracteristica">
+              <li>Até <strong>10</strong> usuarios</li>
+              <li><strong>10GB</strong> de acesso</li>
+              <li>Instalação grátis</li>
+              <li>Fibra Ótica</li>
+              <li>Sem fideldade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a class="botao" href="assine.html">Assine aqui</a>
+            </footer>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="plano plano--mais--">
+            <h2 class="plano__cabecalho">Intermediario</h2>
+            <div class="plano__preco">R$190,90</div>
+            <ul class="plano__caracteristica">
+              <li>Até <strong>20</strong> usuarios</li>
+              <li><strong>30GB</strong> de acesso</li>
+              <li>Instalação grátis</li>
+              <li>Fibra Ótica</li>
+              <li>Sem fideldade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a class="botao" href="assine.html">Assine aqui</a>
+            </footer>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="plano ultima-coluna">
+            <h2 class="plano__cabecalho">Premium</h2>
+            <div class="plano__preco">R$199,90</div>
+            <ul class="plano__caracteristica">
+              <li>Até <strong>50GB</strong> usuarios</li>
+              <li><strong>10GB</strong> de acesso</li>
+              <li>Instalação grátis</li>
+              <li>Fibra Ótica</li>
+              <li>Sem fideldade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a class="botao" href="assine.html">Assine aqui</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="layout-rodape">
+    <div class="container">
+      <p>
+        &copy; Pedro Cancella | Desenvolvido durante a residencia em TIC
+        Serratec
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

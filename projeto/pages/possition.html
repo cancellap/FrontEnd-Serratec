@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Possition</title>
+
+    <style>
+      main {
+        background-color: #e5e5e5;
+        margin: 1.5rem 1rem;
+        padding: 1rem;
+        position: relative;
+      }
+      div {
+        font-size: 1.25rem;
+        padding: 1rem 1.5rem;
+      }
+      .static {
+        background-color: aquamarine;
+      }
+      .relative {
+        background-color: bisque;
+        top: -30px;
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+        background-color: chocolate;
+        top: 0;
+        right: 0;
+      }
+      .fixed {
+        position: fixed;
+        right: 64px;
+        bottom: 64px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Menu Principal</h1>
+      <div class="static"><p>elemtento estatico</p></div>
+      <div class="relative"><p>elemtento relativo</p></div>
+      <div class="absolute"><p>elemtento absoluto</p></div>
+      <div class="fixed"><p>elemtento fixo</p></div>
+    </main>
+  </body>
+</html>
